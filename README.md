@@ -1,1 +1,3 @@
-# react-table
+## React table
+
+Currently just the component itself (without dependencies)
