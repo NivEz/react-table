@@ -83,7 +83,6 @@ const DataTable = ({
   searchable = true,
   isCaseSensitive = false
 }) => {
-  const [tableData, setTableData] = useState(data); // do we need that?
   const [searchTerm, setSearchTerm] = useState(""); // do we need that?
   const [sortField, setSortField] = useState(null);
   const [sortDirection, setsortDirection] = useState(null);
@@ -113,22 +112,6 @@ const DataTable = ({
 
   const search = (searchValue) => {
     setSearchTerm(searchValue);
-  };
-
-  const mySearch = (searchValue) => {
-    const filteredData = data.filter((row) => {
-      for (const cell in row) {
-        let cellValue = row[cell];
-        if (!isCaseSensitive) {
-          cellValue = cellValue.toLowerCase();
-          searchValue = searchValue.toLowerCase();
-        }
-        if (cellValue.includes(searchValue)) {
-          return row;
-        }
-      }
-    });
-    setTableData(filteredData);
   };
 
   const injectSearchBar = () => {
