@@ -83,7 +83,7 @@ const DataTable = ({
   searchable = true,
   isCaseSensitive = false
 }) => {
-  const [searchTerm, setSearchTerm] = useState(""); // do we need that?
+  const [searchTerm, setSearchTerm] = useState("");
   const [sortField, setSortField] = useState(null);
   const [sortDirection, setsortDirection] = useState(null);
 
