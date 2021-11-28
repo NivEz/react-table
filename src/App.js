@@ -1,4 +1,5 @@
-import "./styles.css";
+import React from "react";
+import "App.css";
 import DataTable from "./DataTable";
 
 const columns = [
@@ -21,7 +22,7 @@ export default function App() {
         data={data}
         isCaseSensitive={false}
         searchable={true}
-      ></DataTable>
+      />
     </div>
   );
 }

@@ -1,3 +1,9 @@
 ## React table
 
-Currently just the component itself (without dependencies)
+#### Features:
+* Dynamic content
+* Search
+* Sort
+
+used react-boilerplate repository for configuration - https://github.com/NivEz/react-boilerplate
+
